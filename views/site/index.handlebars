@@ -4,6 +4,11 @@
 <header id="hero">
   <div class="container">
     <div class="intro-text">
+      {{#if sessionFlashSuccess.message}}
+        <div class="{{sessionFlashSuccess.type}}">
+          {{sessionFlashSuccess.message}}
+        </div>
+      {{/if}}
       <h1 class="text-white">NODE - EXPRESS - MONGODB</h1>
       <p>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
